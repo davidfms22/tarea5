@@ -4,32 +4,61 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Esta clase contiene diferntes metetodos para realizar diferentes calculos 
+ * estadisticos
+ * 
+ * @author David Martinez
+ *
+ */
 public final class Statistics {
 
-	public static Double mean(List<Double> data) {
+	// Metodos
+	/**
+	 * Calculo del promedio de todos los datos que estan en la lista
+	 * de datos.
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: promedio de la lista de datos.
+	 */
+	public static Double mean(List<Double> pData) {
 		Double result = new Double(0.00);
-		result = (sumatoria(data) / (data.size()));
+		result = (sumatoria(pData) / (pData.size()));
 
 		return result;
 	}
 
-	public static Double calculateStandardDeviation(List<Double> data) {
+	/**
+	 * Calculo de la desviacion estandar de todos los datos que estan en la lista
+	 * de datos.
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: desviacion estandar de la lista de datos.
+	 */
+	public static Double calculateStandardDeviation(List<Double> pData) {
 		Double result = new Double(0.00);
 		Double sum = 0.00;
-		Double localMean = mean(data);
+		Double localMean = mean(pData);
 
-		for (int i = 0; i < data.size(); i++) {
-			Double resta = data.get(i) - (localMean);
+		for (int i = 0; i < pData.size(); i++) {
+			Double resta = pData.get(i) - (localMean);
 			Double raiz = Math.pow(resta, 2);
 			sum = sum + raiz;
 		}
 
-		result = Math.sqrt(sum / (data.size() - 1));
+		result = Math.sqrt(sum / (pData.size() - 1));
 		return result;
 	}
 
+	/**
+	 * Calculo de la regrsion lineal de todos los datos que estan en las listas
+	 * de datos.
+	 * 
+	 * @param pX: lista de datos X.
+	 * @param pY: lista de datos Y.
+	 * @return result: regresion lineal de las listas de datos.
+	 */
 	public static HashMap<String, Double> linearRegression(List<Double> pX, List<Double> pY) {
-
 		int n = pX.size();
 		Double xAvg = mean(pX);
 		Double yAvg = mean(pY);
@@ -62,6 +91,13 @@ public final class Statistics {
 		return result;
 	}
 
+	/**
+	 * Calculo de la sumatoria de todos los datos que estan en la lista
+	 * de datos.
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: desviacion estandar de la lista de datos.
+	 */
 	public static Double sumatoria(List<Double> pData) {
 		Double result = new Double(0.00);
 		for (int i = 0; i < pData.size(); i++) {
@@ -70,6 +106,12 @@ public final class Statistics {
 		return result;
 	}
 
+	/**
+	 * Recorre todos los elementos de una lista y los eleva al cuadrado
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: lista de datos elevados al cuadrado.
+	 */
 	public static List<Double> squaring(List<Double> pData) {
 		for (int i = 0; i < pData.size(); i++) {
 			Double sqrt = pData.get(i) * pData.get(i);
@@ -78,27 +120,49 @@ public final class Statistics {
 		return pData;
 	}
 
-	public static List<Double> roundDown(List<Double> number, int digit) {
+	/**
+	 * metdodo para deficinir los digitos de precicion de una 
+	 * lista de numeros dobles
+	 * 
+	 * @param pNumber: lista de numeros.
+	 * @param pDigit: cantidad de digitos de precision.
+	 * @return result: lista de datos ajustados con los 
+	 * digitos definidos.
+	 */
+	public static List<Double> roundDown(List<Double> pNumber, int pDigit) {
 		ArrayList<Double> result = new ArrayList<Double>();
-		int decimal = (int) Math.pow(10, digit);
-		for (int i = 0; i < number.size(); i++) {
-			Double num = Math.rint(number.get(i) * decimal) / decimal;
+		int decimal = (int) Math.pow(10, pDigit);
+		for (int i = 0; i < pNumber.size(); i++) {
+			Double num = Math.rint(pNumber.get(i) * decimal) / decimal;
 			result.add(num);
 		}
 
 		return result;
 	}
 
-	public static List<Double> logaritList(List<Double> data) {
+	/**
+	 * Recorre todos los elementos de una lista y los iguala a el valor de
+	 * su logaritmo
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: lista de datos igualados a su logaritmo.
+	 */
+	public static List<Double> logaritList(List<Double> pData) {
 		ArrayList<Double> result = new ArrayList<Double>();
 		Double log = new Double(0.00);
-		for (int i = 0; i < data.size(); i++) {
-			log = Math.log(data.get(i));
+		for (int i = 0; i < pData.size(); i++) {
+			log = Math.log(pData.get(i));
 			result.add(log);
 		}
 		return result;
 	}
 
+	/**
+	 * Calcula la varianza de los datos que se pasan en la lista de datos
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: valor de la varianza calculada.
+	 */
 	public static Double variance(List<Double> pData) {
 		Double result = new Double(0.00);
 		Double avg = new Double(0.00);
@@ -116,11 +180,18 @@ public final class Statistics {
 		return result;
 	}
 
-	public static List<Double> antiLogaritList(List<Double> data) {
+	/**
+	 * Recorre todos los elementos de una lista y los iguala a el valor de
+	 * su antilogaritmo
+	 * 
+	 * @param pData: lista de datos.
+	 * @return result: lista de datos igualados a su antilogaritmo.
+	 */
+	public static List<Double> antiLogaritList(List<Double> pData) {
 		ArrayList<Double> result = new ArrayList<Double>();
 		Double exp = new Double(0.00);
-		for (int i = 0; i < data.size(); i++) {
-			exp = Math.exp(data.get(i));
+		for (int i = 0; i < pData.size(); i++) {
+			exp = Math.exp(pData.get(i));
 			result.add(exp);
 		}
 		return result;
