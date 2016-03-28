@@ -13,16 +13,17 @@ import dm.uniandes.ASE.Statistics;
 import spark.ModelAndView;
 import spark.template.freemarker.FreeMarkerEngine;
 
-/********************************************************************************************/
-/*                                                                                          */
-/* Nombre:         David Francisco Martinez Salcedo                                         */
-/* Fecha:          14/02/2016                                                               */
-/* Descripción:    Programa para contar las clases, metedos y lineas de un programa         */
-/*                                                                                          */
-/********************************************************************************************/
+/***********************************************************************************/
+/*                                                                                 */
+/* Nombre:         David Francisco Martinez Salcedo                                */
+/* Fecha:          28/03/2016                                                      */
+/* Descripción:    Programa para integrar numericamente una funcion                */
+/*                 utilizando la regla de Simpson                                  */
+/*                                                                                 */
+/***********************************************************************************/
 
 /**
- * Esta clase es la principal o raiz de l programa, y desde esta se reliza toda
+ * Esta clase es la principal o raiz del programa, y desde esta se reliza toda
  * la logica en general por medio de las demas clases
  * 
  * @author David Martinez
