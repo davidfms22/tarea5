@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Esta clase contiene diferntes metetodos para realizar diferentes calculos 
+ * Esta clase contiene diferntes metetodos para realizar diferentes calculos
  * estadisticos
  * 
  * @author David Martinez
@@ -15,10 +15,10 @@ public final class Statistics {
 
 	// Metodos
 	/**
-	 * Calculo del promedio de todos los datos que estan en la lista
-	 * de datos.
+	 * Calculo del promedio de todos los datos que estan en la lista de datos.
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: promedio de la lista de datos.
 	 */
 	public static Double mean(List<Double> pData) {
@@ -29,10 +29,11 @@ public final class Statistics {
 	}
 
 	/**
-	 * Calculo de la desviacion estandar de todos los datos que estan en la lista
-	 * de datos.
+	 * Calculo de la desviacion estandar de todos los datos que estan en la
+	 * lista de datos.
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: desviacion estandar de la lista de datos.
 	 */
 	public static Double calculateStandardDeviation(List<Double> pData) {
@@ -54,8 +55,10 @@ public final class Statistics {
 	 * Calculo de la regrsion lineal de todos los datos que estan en las listas
 	 * de datos.
 	 * 
-	 * @param pX: lista de datos X.
-	 * @param pY: lista de datos Y.
+	 * @param pX:
+	 *            lista de datos X.
+	 * @param pY:
+	 *            lista de datos Y.
 	 * @return result: regresion lineal de las listas de datos.
 	 */
 	public static HashMap<String, Double> linearRegression(List<Double> pX, List<Double> pY) {
@@ -92,10 +95,11 @@ public final class Statistics {
 	}
 
 	/**
-	 * Calculo de la sumatoria de todos los datos que estan en la lista
-	 * de datos.
+	 * Calculo de la sumatoria de todos los datos que estan en la lista de
+	 * datos.
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: desviacion estandar de la lista de datos.
 	 */
 	public static Double sumatoria(List<Double> pData) {
@@ -109,7 +113,8 @@ public final class Statistics {
 	/**
 	 * Recorre todos los elementos de una lista y los eleva al cuadrado
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: lista de datos elevados al cuadrado.
 	 */
 	public static List<Double> squaring(List<Double> pData) {
@@ -121,13 +126,14 @@ public final class Statistics {
 	}
 
 	/**
-	 * metdodo para deficinir los digitos de precicion de una 
-	 * lista de numeros dobles
+	 * metdodo para deficinir los digitos de precicion de una lista de numeros
+	 * dobles
 	 * 
-	 * @param pNumber: lista de numeros.
-	 * @param pDigit: cantidad de digitos de precision.
-	 * @return result: lista de datos ajustados con los 
-	 * digitos definidos.
+	 * @param pNumber:
+	 *            lista de numeros.
+	 * @param pDigit:
+	 *            cantidad de digitos de precision.
+	 * @return result: lista de datos ajustados con los digitos definidos.
 	 */
 	public static List<Double> roundDown(List<Double> pNumber, int pDigit) {
 		ArrayList<Double> result = new ArrayList<Double>();
@@ -141,10 +147,11 @@ public final class Statistics {
 	}
 
 	/**
-	 * Recorre todos los elementos de una lista y los iguala a el valor de
-	 * su logaritmo
+	 * Recorre todos los elementos de una lista y los iguala a el valor de su
+	 * logaritmo
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: lista de datos igualados a su logaritmo.
 	 */
 	public static List<Double> logaritList(List<Double> pData) {
@@ -160,7 +167,8 @@ public final class Statistics {
 	/**
 	 * Calcula la varianza de los datos que se pasan en la lista de datos
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: valor de la varianza calculada.
 	 */
 	public static Double variance(List<Double> pData) {
@@ -181,10 +189,11 @@ public final class Statistics {
 	}
 
 	/**
-	 * Recorre todos los elementos de una lista y los iguala a el valor de
-	 * su antilogaritmo
+	 * Recorre todos los elementos de una lista y los iguala a el valor de su
+	 * antilogaritmo
 	 * 
-	 * @param pData: lista de datos.
+	 * @param pData:
+	 *            lista de datos.
 	 * @return result: lista de datos igualados a su antilogaritmo.
 	 */
 	public static List<Double> antiLogaritList(List<Double> pData) {

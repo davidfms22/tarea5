@@ -10,8 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Esta clase es la encargada de leer datos o pares de datos
- * desde archivos .txt
+ * Esta clase es la encargada de leer datos o pares de datos desde archivos .txt
  * 
  * @author David Martinez
  *
@@ -29,7 +28,8 @@ public final class FileFinder {
 	 * Este metodo busca un archivo por una ruta dada, y lo recorre, linea a
 	 * linea para obtener todos los numeros dobles.
 	 * 
-	 * @param pFilePath: la ruta del arrchivo que contiene los datos.
+	 * @param pFilePath:
+	 *            la ruta del arrchivo que contiene los datos.
 	 * @return data: lista con todos los datos recuperados en el archivo.
 	 * @exception IOException
 	 * @exception FileNotFoundException
@@ -54,13 +54,15 @@ public final class FileFinder {
 	 * Este metodo busca un archivo por una ruta dada, y lo recorre, linea a
 	 * linea para obtener las parejas de numeros dobles.
 	 * 
-	 * @param pFilePath: la ruta del arrchivo que contiene los datos.
+	 * @param pFilePath:
+	 *            la ruta del arrchivo que contiene los datos.
 	 * @return pairData: lista con todas las parejas de datos recuperados en el
 	 *         archivo.
 	 * @exception IOException
 	 * @exception FileNotFoundException
 	 */
-	public static HashMap<String, List<Double>> getPairData(String pFilePath) throws FileNotFoundException, IOException {
+	public static HashMap<String, List<Double>> getPairData(String pFilePath)
+			throws FileNotFoundException, IOException {
 		FileReader file = new FileReader(mainPath.replace(".", pFilePath));
 		BufferedReader linesFile = new BufferedReader(file);
 		String line;

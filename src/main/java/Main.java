@@ -13,8 +13,32 @@ import dm.uniandes.ASE.Statistics;
 import spark.ModelAndView;
 import spark.template.freemarker.FreeMarkerEngine;
 
+/********************************************************************************************/
+/*                                                                                          */
+/* Nombre:         David Francisco Martinez Salcedo                                         */
+/* Fecha:          14/02/2016                                                               */
+/* Descripción:    Programa para contar las clases, metedos y lineas de un programa         */
+/*                                                                                          */
+/********************************************************************************************/
+
+/**
+ * Esta clase es la principal o raiz de l programa, y desde esta se reliza toda
+ * la logica en general por medio de las demas clases
+ * 
+ * @author David Martinez
+ *
+ */
+
 public class Main {
 
+	// Metodos
+
+	/**
+	 * Metodo principal del programa.
+	 * 
+	 * @param args:
+	 *            lista de argumentos.
+	 */
 	public static void main(String[] args) {
 
 		port(Integer.valueOf(System.getenv("PORT")));
@@ -74,7 +98,7 @@ public class Main {
 		String b2 = result2.get(1).toString();
 		String b3 = result2.get(2).toString();
 		String b4 = result2.get(3).toString();
-//		String b5 = result2.get(4).toString();
+		// String b5 = result2.get(4).toString();
 
 		get("/", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
@@ -90,7 +114,7 @@ public class Main {
 			attributes.put("B5", "prueba");
 
 			return new ModelAndView(attributes, "index.ftl");
-		} , new FreeMarkerEngine());
+		}, new FreeMarkerEngine());
 
 	}
 
