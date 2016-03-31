@@ -18,7 +18,9 @@
 		    <td class="tg-6alo"></td>
 		  </tr>
 		  <tr>
-		    <td class="tg-bgso">0 to x= 1.1</td>
+		    <td class="tg-bgso">
+		    	<input type=text name="nombre">
+		    </td>
 		    <td class="tg-chpy">9</td>
 		    <td class="tg-chpy">0.35006</td>
 		    <td class="tg-chpy">${A1}</td>
