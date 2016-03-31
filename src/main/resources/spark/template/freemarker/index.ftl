@@ -36,5 +36,6 @@
 		    <td class="tg-chpy">${A3}</td>
 		  </tr>
 		</table>
+		<input type="submit" value="Cacular"/>
 	</body>
 </html>

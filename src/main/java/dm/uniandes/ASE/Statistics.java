@@ -206,4 +206,11 @@ public final class Statistics {
 		return result;
 	}
 
+	public static Double gammaFuntion(Double pX) {
+		double tmp = (pX - 0.5) * Math.log(pX + 4.5) - (pX + 4.5);
+		double ser = 1.0 + 76.18009173 / (pX + 0) - 86.50532033 / (pX + 1) + 24.01409822 / (pX + 2) - 1.231739516 / (pX + 3)
+				+ 0.00120858003 / (pX + 4) - 0.00000536382 / (pX + 5);
+		return tmp + Math.log(ser * Math.sqrt(2 * Math.PI));
+	}
+
 }
