@@ -57,9 +57,12 @@ public class Main {
 		}, new FreeMarkerEngine());
 		
 		post("/calculo", (request, response) -> {
-			Double resultado = 0.0;
-			return resultado;
-		});
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", a3);
+			attributes.put("A2", a3);
+			attributes.put("A3", a3);
+			return new ModelAndView(attributes, "index.ftl");
+		}, new FreeMarkerEngine());
 			
 		
 
