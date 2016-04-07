@@ -25,7 +25,7 @@ body{
 }
 .contacto input[type='text'], .contacto textarea{
     padding: 7px 6px;
-    width: 294px;
+    width: 150px;
     border: 1px solid #CED5D7;
     resize: none;
     box-shadow:0 0 0 3px #EEF5F7;
