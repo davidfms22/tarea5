@@ -35,6 +35,14 @@
 		    <td class="tg-chpy"> 0.49500 </td>
 		    <td class="tg-chpy"> ${A3} </td>
 		  </tr>
+		  <tr>
+		    <td class="tg-bgso"> 
+		    	<input type="text" name="name" required />
+		    </td>
+		    <td class="tg-chpy"> 30 </td>
+		    <td class="tg-chpy"> 0.49500 </td>
+		    <td class="tg-chpy"> ${A3} </td>
+		  </tr>
 		</table>
 	</body>
 </html>
