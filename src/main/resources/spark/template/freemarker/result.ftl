@@ -46,7 +46,7 @@
 				  </tr>
 				</table>
 			</div>
-			<div><input type='submit' value='Atras'></div>
+			<div><input type='submit' value='Back'></div>
 		</form>
 	</body>
 </html>

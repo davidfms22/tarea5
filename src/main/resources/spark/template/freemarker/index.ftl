@@ -50,7 +50,7 @@
 				  </tr>
 				</table>
 			</div>
-			<div><input type='submit' value='Calcular'></div>
+			<div><input type='submit' value='Calculate'></div>
 		</form>
 	</body>
 </html>
