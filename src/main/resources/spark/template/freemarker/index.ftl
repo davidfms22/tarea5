@@ -37,12 +37,17 @@
 		  </tr>
 		  <tr>
 		    <td class="tg-bgso"> 
-		    	<input type="text" name="name" required />
+		    	<input type="text" name="x" required />
 		    </td>
-		    <td class="tg-chpy"> 30 </td>
+		    <td class="tg-chpy"> 
+		    	<input type="text" name="dof" required />
+		    </td>
 		    <td class="tg-chpy"> 0.49500 </td>
 		    <td class="tg-chpy"> ${A3} </td>
 		  </tr>
 		</table>
+		<li>
+			<button class="submit" type="submit"> Calcular </button>
+		</li>
 	</body>
 </html>
