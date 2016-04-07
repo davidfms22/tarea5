@@ -7,7 +7,6 @@
 	<body>
 		
 		<form class="contacto" action="" method="post" name="contact_form">
-			<div><label>Tu Nombre:</label><input type='text' value=''></div>
 			<div> 
 				<table class="tg">
 				  <tr>

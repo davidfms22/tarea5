@@ -4,7 +4,7 @@
     color: #798e94;
 }
 body{
-    width: 600px;
+    width: 5500px;
     margin: auto;
     background-color: #BDBDBD;
 }
@@ -25,7 +25,7 @@ body{
 }
 .contacto input[type='text'], .contacto textarea{
     padding: 7px 6px;
-    width: 150px;
+    width: 110px;
     border: 1px solid #CED5D7;
     resize: none;
     box-shadow:0 0 0 3px #EEF5F7;
