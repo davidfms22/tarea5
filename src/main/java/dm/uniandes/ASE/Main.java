@@ -61,7 +61,7 @@ public class Main {
 			attributes.put("A1", a3);
 			attributes.put("A2", a3);
 			attributes.put("A3", a3);
-			return new ModelAndView(attributes, "index.ftl");
+			return new ModelAndView(attributes, "result.ftl");
 		}, new FreeMarkerEngine());
 			
 		
