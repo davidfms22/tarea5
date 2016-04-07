@@ -48,31 +48,48 @@ public class Integral {
 	}
 
 	/**
-	 * Metodo para acceder al valor de la propiedad lowerLimit.
+	 * Metodo para acceder al valor de la propiedad upperLimit.
 	 * 
-	 * @return valor que tiene la porpiedad lowerLimit.
+	 * @return valor que tiene la porpiedad upperLimit.
 	 */
 	public Double getUpperLimit() {
 		return upperLimit;
 	}
 
+	/**
+	 * Metodo para modificar el valor de la porpiedad upperLimit.
+	 * 
+	 * @param upperLimit:
+	 *            El valor que que se desea asignar.
+	 */
 	public void setUpperLimit(Double upperLimit) {
 		this.upperLimit = upperLimit;
 	}
 
 	/**
-	 * Metodo para acceder al valor de la propiedad lowerLimit.
+	 * Metodo para acceder al valor de la propiedad dof.
 	 * 
-	 * @return valor que tiene la porpiedad lowerLimit.
+	 * @return valor que tiene la porpiedad dof.
 	 */
 	public Double getDof() {
 		return dof;
 	}
 
+	/**
+	 * Metodo para modificar el valor de la porpiedad dof.
+	 * 
+	 * @param dof:
+	 *            El valor que que se desea asignar.
+	 */
 	public void setDof(Double dof) {
 		this.dof = dof;
 	}
 
+	/**
+	 * Metodo que calcula el valor de la integral.
+	 * 
+	 * @return valor de la integral.
+	 */
 	public Double calculate() {
 		Double result = 0.0;
 		return result;

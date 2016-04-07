@@ -206,6 +206,13 @@ public final class Statistics {
 		return result;
 	}
 
+	/**
+	 * Realiza la funcion gamma para un valor de x dado
+	 * 
+	 * @param pX:
+	 *            funcion.
+	 * @return result: resultado de la funcion gamma.
+	 */
 	public static Double gammaFuntion(Double pX) {
 		double tmp = (pX - 0.5) * Math.log(pX + 4.5) - (pX + 4.5);
 		double ser = 1.0 + 76.18009173 / (pX + 0) - 86.50532033 / (pX + 1) + 24.01409822 / (pX + 2)

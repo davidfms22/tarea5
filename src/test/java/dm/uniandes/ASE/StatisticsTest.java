@@ -1,14 +1,11 @@
 package dm.uniandes.ASE;
 
-import java.util.ArrayList;
-
 import static org.junit.Assert.assertEquals;
 
-import org.junit.After;
+import java.util.ArrayList;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import dm.uniandes.ASE.Statistics;
 
 /**
  * Unit test for simple StatisticsTest.
@@ -19,6 +16,9 @@ public class StatisticsTest {
 	public ArrayList<Double> result1;
 	public ArrayList<Double> result2;
 
+	/**
+	 * Prepara el escenario antes de ejecutar las pruebas estadisticas
+	 */
 	@Before
 	public void antesDelTest() {
 
@@ -30,11 +30,9 @@ public class StatisticsTest {
 
 	}
 
-	@After
-	public void despuesDelTest() {
-
-	}
-
+	/**
+	 * Metodo prueba Sumatoria.
+	 */
 	@Test
 	public void testSumatoria() {
 
@@ -42,6 +40,9 @@ public class StatisticsTest {
 		assertEquals("La sumatoria deberia ser 13", new Double(13), resultado, 1e-4);
 	}
 
+	/**
+	 * Metodo prueba Media de un grupo de datos.
+	 */
 	@Test
 	public void testMean() {
 
@@ -49,6 +50,9 @@ public class StatisticsTest {
 		assertEquals("La media deberia ser 3.25", new Double(3.25), resultado, 1e-4);
 	}
 
+	/**
+	 * Metodo prueba Varianza.
+	 */
 	@Test
 	public void testVariance() {
 
