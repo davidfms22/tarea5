@@ -45,22 +45,28 @@ public class Main {
 
 		String a1 = "TEST1";
 		String a2 = "TEST2";
-		String a3 = "RESULTADO";
+		String a3 = "TEST3";
+		String x1 = "algo1";
+		String x2 = "algo2";
+		String r1 = "RESULT";
 
 		get("/", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", a1);
-			attributes.put("A2", a2);
-			attributes.put("A3", a3);
+			attributes.put("A1", "");
+			attributes.put("A2", "");
+			attributes.put("A3", "");
 
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
 		
 		post("/calcular", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", a3);
-			attributes.put("A2", a3);
+			attributes.put("A1", a1);
+			attributes.put("A2", a2);
 			attributes.put("A3", a3);
+			attributes.put("X1", x1);
+			attributes.put("X2", x2);
+			attributes.put("R1", r1);
 			return new ModelAndView(attributes, "result.ftl");
 		}, new FreeMarkerEngine());
 			

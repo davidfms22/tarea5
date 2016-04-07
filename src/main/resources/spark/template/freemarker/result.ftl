@@ -39,10 +39,10 @@
 				    <td class="tg-chpy"> ${A3} </td>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso"> ${A3} </td>
-				    <td class="tg-chpy"> ${A3} </td>
+				    <td class="tg-bgso"> ${X1} </td>
+				    <td class="tg-chpy"> ${X2} </td>
 				    <td class="tg-chpy"> </td>
-				    <td class="tg-chpy"> ${A3} </td>
+				    <td class="tg-chpy"> ${R1} </td>
 				  </tr>
 				</table>
 			</div>
