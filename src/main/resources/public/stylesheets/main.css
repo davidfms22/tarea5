@@ -66,7 +66,7 @@ body{
 }
 
 .tg td{
-	font-family:Arial, sans-serif;
+	font-family:sans-serif;
 	font-size:14px;padding:10px 5px;
 	border-style:solid;
 	border-width:1px;
@@ -78,9 +78,9 @@ body{
 }
 
 .tg th{
-	font-family:Arial, sans-serif;
+	font-family:sans-serif;
 	font-size:14px;
-	font-weight:normal;
+	font-weight:bold;
 	padding:10px 5px;
 	border-style:solid;
 	border-width:1px;
@@ -93,12 +93,12 @@ body{
 .tg .tg-30hw{
 	font-weight:bold;
 	font-size:15px;
-	font-family:serif !important;
+	font-family:sans-serif;
 	text-align:center;vertical-align:top
 }
 
 .tg .tg-chpy{font-size:14px;
-	font-family:serif !important;
+	font-family:sans-serif;
 	text-align:center;
 	vertical-align:top
 }
@@ -106,7 +106,7 @@ body{
 .tg .tg-tbvz{
 	font-weight:bold;
 	font-size:15px;
-	font-family:serif !important;
+	font-family:sans-serif;
 	background-color:#cfe6ef;
 	color:#ffffff;text-align:center;
 	vertical-align:top
@@ -114,5 +114,5 @@ body{
 
 .tg .tg-bgso{
 	font-size:14px;
-	font-family:serif !important;
+	font-family:sans-serif;
 	vertical-align:top}
