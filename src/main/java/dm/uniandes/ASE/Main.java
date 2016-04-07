@@ -56,7 +56,7 @@ public class Main {
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
 		
-		post("/calculo", (request, response) -> {
+		post("/calcular", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a3);
 			attributes.put("A2", a3);
