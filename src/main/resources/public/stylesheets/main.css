@@ -43,7 +43,7 @@ body{
     font-weight: bold;
     text-shadow: 1px 1px 0px white;
  
-    background: #e4f1f6;
+    background: #23ac14;
     background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
     background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
 }
@@ -88,7 +88,7 @@ body{
 	word-break:normal;
 	border-color:#CED5D7;
 	color:#fff;
-	background-color:#ede8bd;
+	background-color:#a7e896;
 }
 .tg .tg-30hw{
 	font-weight:bold;
@@ -107,7 +107,7 @@ body{
 	font-weight:bold;
 	font-size:15px;
 	font-family:serif !important;
-	background-color:#ede8bd;
+	background-color:#a7e896;
 	color:#ffffff;text-align:center;
 	vertical-align:top
 }
