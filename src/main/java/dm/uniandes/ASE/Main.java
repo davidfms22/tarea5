@@ -44,7 +44,7 @@ public class Main {
 
 		String a1 = "TEST1";
 		String a2 = "TEST2";
-		String a3 = "TEST3";
+		String a3 = "RESULTADO";
 
 		get("/", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
