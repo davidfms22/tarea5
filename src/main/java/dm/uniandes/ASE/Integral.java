@@ -3,6 +3,9 @@
  */
 package dm.uniandes.ASE;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Esta clase contiene diferntes metetodos para realizar un integral con el
  * metodo numerico llamado regla de Simpson
@@ -18,10 +21,12 @@ public class Integral {
 
 	private Double upperLimit;
 
-	private Double dof;
+	private Integer dof;
+	
+	private Integer num_seg = 10;
 
 	// Contructor
-	public Integral(Double upperLimit, Double dof) {
+	public Integral(Double upperLimit, Integer dof) {
 		this.lowerLimit = 0.0;
 		this.upperLimit = upperLimit;
 		this.dof = dof;
@@ -71,7 +76,7 @@ public class Integral {
 	 * 
 	 * @return valor que tiene la porpiedad dof.
 	 */
-	public Double getDof() {
+	public Integer getDof() {
 		return dof;
 	}
 
@@ -81,7 +86,7 @@ public class Integral {
 	 * @param dof:
 	 *            El valor que que se desea asignar.
 	 */
-	public void setDof(Double dof) {
+	public void setDof(Integer dof) {
 		this.dof = dof;
 	}
 
@@ -92,6 +97,11 @@ public class Integral {
 	 */
 	public Double calculate() {
 		Double result = 0.0;
+		Double W = this.upperLimit/this.num_seg;
+		Double r12 = Statistics.gammaFuntion((double) ((dof + 1)/2));
+		Double r2 = Statistics.gammaFuntion((double) ((dof)/2));
+		Double term1 = r12/((Math.pow(dof * Math.PI, 0.5))*(r2));
+		result = Statistics.roundDown(term1, 4);
 		return result;
 	}
 

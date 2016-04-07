@@ -135,7 +135,7 @@ public final class Statistics {
 	 *            cantidad de digitos de precision.
 	 * @return result: lista de datos ajustados con los digitos definidos.
 	 */
-	public static List<Double> roundDown(List<Double> pNumber, int pDigit) {
+	public static List<Double> roundDownList(List<Double> pNumber, int pDigit) {
 		ArrayList<Double> result = new ArrayList<Double>();
 		int decimal = (int) Math.pow(10, pDigit);
 		for (int i = 0; i < pNumber.size(); i++) {
@@ -218,6 +218,24 @@ public final class Statistics {
 		double ser = 1.0 + 76.18009173 / (pX + 0) - 86.50532033 / (pX + 1) + 24.01409822 / (pX + 2)
 				- 1.231739516 / (pX + 3) + 0.00120858003 / (pX + 4) - 0.00000536382 / (pX + 5);
 		return tmp + Math.log(ser * Math.sqrt(2 * Math.PI));
+	}
+	
+	/**
+	 * metdodo para deficinir los digitos de precicion de una lista de numeros
+	 * dobles
+	 * 
+	 * @param pNumber:
+	 *            lista de numeros.
+	 * @param pDigit:
+	 *            cantidad de digitos de precision.
+	 * @return result: lista de datos ajustados con los digitos definidos.
+	 */
+	public static Double roundDown(Double pNumber, int pDigit) {
+		Double result = 0.0;
+		int decimal = (int) Math.pow(10, pDigit);
+		result = Math.rint(pNumber * decimal) / decimal;
+
+		return result;
 	}
 
 }

@@ -52,7 +52,8 @@ public class Main {
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
 		
-		String a1 = "TEST1";
+		
+		String a1 = doIntegral(1.1, 9).toString();
 		String a2 = "TEST2";
 		String a3 = "TEST3";
 		String x1 = "algo1";
@@ -82,9 +83,9 @@ public class Main {
 	 *            funcion a intengrar.
 	 * @return result: resultado de la integral.
 	 */
-	public Double doIntegral (Double pX, Double pDof){
-		
-		return 0.0;
+	public static Double doIntegral (Double pX, Integer pDof){
+		Integral integral = new Integral(pX, pDof);
+		return integral.calculate();
 	}
 
 }
