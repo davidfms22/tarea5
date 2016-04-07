@@ -6,7 +6,7 @@
 
 	<body>
 		
-		<form class="contacto" action="" method="post" name="contact_form">
+		<form class="contacto" action="/calcular" method="post" name="contact_form">
 			<div> 
 				<table class="tg">
 				  <tr>
@@ -40,10 +40,10 @@
 				  </tr>
 				  <tr>
 				    <td class="tg-bgso"> 
-				    	<input type="text" name="x" required />
+				    	<input type="text" name="x" required="true" />
 				    </td>
 				    <td class="tg-chpy"> 
-				    	<input type="text" name="dof" required />
+				    	<input type="text" name="dof" required="true" />
 				    </td>
 				    <td class="tg-chpy"> 0.49500 </td>
 				    <td class="tg-chpy"> ${A3} </td>

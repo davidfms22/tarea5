@@ -1,6 +1,7 @@
 package dm.uniandes.ASE;
 
 import static spark.Spark.get;
+import static spark.Spark.post;
 import static spark.SparkBase.port;
 import static spark.SparkBase.staticFileLocation;
 
@@ -54,7 +55,16 @@ public class Main {
 
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
+		
+		post("/calculo", (request, response) -> {
+			Double resultado = 0.0;
+			return resultado;
+		});
+			
+		
 
 	}
+
+	
 
 }
