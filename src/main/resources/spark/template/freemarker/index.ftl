@@ -18,7 +18,7 @@
 				    <td class="tg-tbvz"> x </td>
 				    <td class="tg-tbvz"> dof </td>
 				    <td class="tg-tbvz"> p </td>
-				    <td class="tg-6alo"></td>
+				    <td class="tg-tbvz"> </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-bgso"> 0 to x= 1.1812 </td>
