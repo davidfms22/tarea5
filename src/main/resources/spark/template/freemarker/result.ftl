@@ -39,7 +39,7 @@
 				    <td class="tg-chpy"> ${A3} </td>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso"> 0 to = ${X1} </td>
+				    <td class="tg-bgso"> 0 to x = ${X1} </td>
 				    <td class="tg-chpy"> ${X2} </td>
 				    <td class="tg-chpy"> </td>
 				    <td class="tg-chpy"> ${R1} </td>
