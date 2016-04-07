@@ -46,8 +46,10 @@
 		    <td class="tg-chpy"> ${A3} </td>
 		  </tr>
 		</table>
-		<li>
-			<button class="submit" type="submit"> Calcular </button>
-		</li>
+		<form class="contact_form" action="" method="post" name="contact_form">
+			<li>
+				<button class="submit" type="submit"> Calcular </button>
+			</li>
+		</form>
 	</body>
 </html>
