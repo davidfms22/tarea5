@@ -98,7 +98,7 @@ public class Integral {
 	public Double calculate() {
 		Double result = 0.0;
 		Double W = this.upperLimit/this.num_seg;
-		Double r12 = Statistics.gammaFuntion((double) ((this.dof + 1)/2));
+		Double r12 = Statistics.gammaFuntion ((double) ((this.dof + 1)/2));
 		Double r2 = Statistics.gammaFuntion((double) ((this.dof)/2));
 		Double term1 = r12/((Math.pow(this.dof * Math.PI, 0.5))*(r2));
 		result = Statistics.roundDown(term1, 4);

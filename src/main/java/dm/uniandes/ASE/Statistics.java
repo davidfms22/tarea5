@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+
 /**
  * Esta clase contiene diferntes metetodos para realizar diferentes calculos
  * estadisticos
@@ -214,10 +215,27 @@ public final class Statistics {
 	 * @return result: resultado de la funcion gamma.
 	 */
 	public static Double gammaFuntion(Double pX) {
-		double tmp = (pX - 0.5) * Math.log(pX + 4.5) - (pX + 4.5);
-		double ser = 1.0 + 76.18009173 / (pX + 0) - 86.50532033 / (pX + 1) + 24.01409822 / (pX + 2)
-				- 1.231739516 / (pX + 3) + 0.00120858003 / (pX + 4) - 0.00000536382 / (pX + 5);
-		return tmp + Math.log(ser * Math.sqrt(2 * Math.PI));
+		if (pX % 1 == 0.0) {
+			return factorial(pX - 1);
+		} else {
+			return fractionalFactorial(pX - 1);
+		}
+	}
+	
+	public static Double factorial(Double pX){ 
+		if(pX==0){ 
+			return 1.0; 
+		} else{ 
+			return factorial(pX-1)*pX; 
+			} 
+	}
+	
+	public static Double fractionalFactorial(Double pX){ 
+		if(pX==0.5){ 
+			return 0.5*(Math.sqrt(Math.PI)); 
+		} else{ 
+			return fractionalFactorial(pX-1)*(pX); 
+			} 
 	}
 	
 	/**

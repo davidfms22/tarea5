@@ -59,5 +59,25 @@ public class StatisticsTest {
 		Double resultado = Statistics.variance(lista);
 		assertEquals("La varianza deberia ser 0.2241", new Double(0.2241), resultado, 1e-4);
 	}
+	
+	/**
+	 * Metodo prueba1 Gamma.
+	 */
+	@Test
+	public void testGamma1() {
+
+		Double resultado = Statistics.gammaFuntion(5.0);
+		assertEquals("La varianza deberia ser 24", 24.0, resultado, 1e-4);
+	}
+	
+	/**
+	 * Metodo prueba2 Gamma.
+	 */
+	@Test
+	public void testGamma2() {
+
+		Double resultado = Statistics.gammaFuntion(4.5);
+		assertEquals("La varianza deberia ser 11.63", 11.63173, resultado, 1e-4);
+	}
 
 }
