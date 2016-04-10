@@ -54,8 +54,8 @@ public class Main {
 		
 		
 		String a1 = doIntegral(1.1, 9).toString();
-		String a2 = "TEST2";
-		String a3 = "TEST3";
+		String a2 = doIntegral(1.1812, 10).toString();
+		String a3 = doIntegral(2.750, 30).toString();
 		String x1 = "algo1";
 		String x2 = "algo2";
 		String r1 = "RESULT";

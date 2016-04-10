@@ -3,9 +3,6 @@
  */
 package dm.uniandes.ASE;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Esta clase contiene diferntes metetodos para realizar un integral con el
  * metodo numerico llamado regla de Simpson
@@ -22,7 +19,7 @@ public class Integral {
 	private Double upperLimit;
 
 	private Integer dof;
-	
+
 	private Integer num_seg = 10;
 
 	// Contructor
@@ -91,18 +88,42 @@ public class Integral {
 	}
 
 	/**
-	 * Metodo que calcula el valor de la integral.
+	 * Método que realiza el calculo total de la Integración Numérica.
 	 * 
 	 * @return valor de la integral.
 	 */
 	public Double calculate() {
-		Double result = 0.0;
-		Double W = this.upperLimit/this.num_seg;
-		Double r12 = Statistics.gammaFuntion ((double) ((this.dof + 1)/2));
-		Double r2 = Statistics.gammaFuntion((double) ((this.dof)/2));
-		Double term1 = r12/((Math.pow(this.dof * Math.PI, 0.5))*(r2));
-		result = Statistics.roundDown(term1, 4);
-		return result;
+		Double p = 0.0;
+		Double W = this.upperLimit / this.num_seg;
+
+		for (int i = 0; i < this.num_seg + 1; i++) {
+			int multiplier = 1;
+
+			if (i != 0 && i != this.num_seg)
+				multiplier = i % 2 == 0 ? 2 : 4;
+			Double terms = calculateFunction(dof, i * W);
+
+			terms = terms * (W / 3) * multiplier;
+			p += terms;
+		}
+		p = Statistics.roundDown(p, 4);
+		return p;
+	}
+
+	/**
+	 * Este método realiza el calculo completo de la función F(x)
+	 * 
+	 * @param dof
+	 *            - Grados de Libertad
+	 * @param value
+	 *            - valor de x en la función
+	 * @return valor calculado
+	 */
+	public Double calculateFunction(int dof, Double value) {
+		Double res = Statistics.gammaFuntion((this.dof + 1) / 2.0);
+		res = res / ((Math.sqrt(dof * Math.PI)) * Statistics.gammaFuntion((this.dof) / 2.0));
+		res = res * (Math.pow(1 / (1 + ((Math.pow(value, 2)) / dof)), (dof + 1) / 2));
+		return res;
 	}
 
 }
