@@ -56,18 +56,12 @@ public class Main {
 		String a1 = doIntegral(1.1, 9).toString();
 		String a2 = doIntegral(1.1812, 10).toString();
 		String a3 = doIntegral(2.750, 30).toString();
-		String x1 = "algo1";
-		String x2 = "algo2";
-		String r1 = "RESULT";
 		
 		post("/calcular", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a1);
 			attributes.put("A2", a2);
 			attributes.put("A3", a3);
-			attributes.put("X1", x1);
-			attributes.put("X2", x2);
-			attributes.put("R1", r1);
 			return new ModelAndView(attributes, "result.ftl");
 		}, new FreeMarkerEngine());
 

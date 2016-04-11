@@ -21,7 +21,7 @@
 				    <td class="tg-tbvz"> </td>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso"> 0 to x = 1.1812 </td>
+				    <td class="tg-bgso"> 0 to x = 1.1 </td>
 				    <td class="tg-chpy"> 9 </td>
 				    <td class="tg-chpy"> 0.35006 </td>
 				    <td class="tg-chpy"> ${A1} </td>
@@ -37,16 +37,6 @@
 				    <td class="tg-chpy"> 30 </td>
 				    <td class="tg-chpy"> 0.49500 </td>
 				    <td class="tg-chpy"> ${A3} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-bgso"> 
-				    	<input type="text" name="x" required="true" />
-				    </td>
-				    <td class="tg-chpy"> 
-				    	<input type="text" name="dof" required="true" />
-				    </td>
-				    <td class="tg-chpy"> </td>
-				    <td class="tg-chpy"> </td>
 				  </tr>
 				</table>
 			</div>
